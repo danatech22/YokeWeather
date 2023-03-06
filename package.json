@@ -38,6 +38,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy" : "npm run build",
+"deploy" : "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -61,6 +63,7 @@
     ]
   },
   "devDependencies": {
-    "@types/mapbox__mapbox-gl-geocoder": "^4.7.3"
+    "@types/mapbox__mapbox-gl-geocoder": "^4.7.3",
+    "gh-pages": "^5.0.0"
   }
 }
